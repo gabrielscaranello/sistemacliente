@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controle.CadastroClientes">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--      Conteúdo rolável  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/estiloLabels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelNome" />
+
+            <EditText
+                android:id="@+id/campoNome"
+                android:hint="@string/marcaCampoObrigatorio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"/>
+
+            <TextView
+                style="@style/estiloLabels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelTelefone" />
+
+            <EditText
+                android:id="@+id/campoTelefone"
+                android:hint="@string/marcaCampoObrigatorio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="phone"/>
+
+            <TextView
+                style="@style/estiloLabels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelEmail" />
+
+            <EditText
+                android:id="@+id/campoEmail"
+                android:hint="@string/marcaCampoObrigatorio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="textEmailAddress"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/labelPessoaFisica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/labelPessoaFisica"
+                    android:layout_marginRight="25dp">
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/labelPessoaJuridica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/labelPessoaJuridica">
+                </RadioButton>
+
+            </RadioGroup>
+
+            <TextView
+                style="@style/estiloLabels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelCpf" />
+
+            <EditText
+                android:id="@+id/campoCpfCnpj"
+                android:hint="@string/marcaCampoObrigatorio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="number"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                style="@style/estiloLabels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/labelDataNasc" />
+
+            <EditText
+                android:id="@+id/campoDataNasc"
+                android:hint="@string/marcaCampoObrigatorio"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="date"
+                android:focusable="false"
+                android:clickable="true"
+                android:onClick="eventoCliqueCampoData"/>
+
+
+
+                <TextView
+                    style="@style/estiloLabels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/labelSexo" />
+
+                <Spinner
+                    android:id="@+id/campoSexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></Spinner>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        app:srcCompat="@drawable/ok_button" />
+
+</RelativeLayout>

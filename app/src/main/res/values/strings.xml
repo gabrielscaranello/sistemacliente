@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SistemaClientes</string>
+    <string name="tituloPesquisaCliente">Clientes</string>
+    <string name="tituloCadastroCliente">Cadastro de Clientes</string>
+    <string name="labelNome">Nome:</string>
+    <string name="marcaCampoObrigatorio">(Obrigatório)</string>
+    <string name="labelTelefone">Telefone:</string>
+    <string name="labelEmail">Email:</string>
+    <string name="labelPessoaFisica">Pessoa Física:</string>
+    <string name="labelPessoaJuridica">Pessoa Juridica:</string>
+    <string name="labelCpf">CPF:</string>
+    <string name="labelCnpj">CNPJ:</string>
+    <string name="labelDataNasc">Data de Nascimento:</string>
+    <string name="labelSexo">Sexo:</string>
+</resources>
