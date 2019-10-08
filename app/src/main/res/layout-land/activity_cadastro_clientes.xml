@@ -163,6 +163,7 @@
         android:tint="@android:color/white"
         app:backgroundTint="@color/colorPrimary"
         app:borderWidth="0dp"
+        android:onClick="eventoCliqueBotaoSalvar"
         app:srcCompat="@drawable/ok_button" />
 
 </RelativeLayout>

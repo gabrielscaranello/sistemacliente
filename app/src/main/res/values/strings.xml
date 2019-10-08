@@ -12,4 +12,6 @@
     <string name="labelCnpj">CNPJ:</string>
     <string name="labelDataNasc">Data de Nascimento:</string>
     <string name="labelSexo">Sexo:</string>
+    <string name="sexoMasc">Masculino</string>
+    <string name="sexoFem">Feminino</string>
 </resources>
