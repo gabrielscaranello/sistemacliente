@@ -5,13 +5,21 @@
     <string name="labelNome">Nome:</string>
     <string name="marcaCampoObrigatorio">(Obrigatório)</string>
     <string name="labelTelefone">Telefone:</string>
-    <string name="labelEmail">Email:</string>
-    <string name="labelPessoaFisica">Pessoa Física:</string>
-    <string name="labelPessoaJuridica">Pessoa Juridica:</string>
+    <string name="labelEmail">E-Mail:</string>
+    <string name="labelPessoaFisica">Pessoa Física</string>
+    <string name="labelPessoaJuridica">Pessoa Jurídica</string>
     <string name="labelCpf">CPF:</string>
     <string name="labelCnpj">CNPJ:</string>
-    <string name="labelDataNasc">Data de Nascimento:</string>
+    <string name="labelDataNasc">Data Nascimento:</string>
     <string name="labelSexo">Sexo:</string>
-    <string name="sexoMasc">Masculino</string>
-    <string name="sexoFem">Feminino</string>
+    <string name="sexoMasculino">Masculino</string>
+    <string name="sexoFeminino">Feminino</string>
+    <string name="textoBotaoOK">OK</string>
+    <string name="textoTituloMensagemConfirmacao">Confirmação</string>
+    <string name="textoTituloMensagemErro">ERRO</string>
+    <string name="textoMensagemClienteGravado">Operação realizada com sucesso!</string>
+    <string name="textoMensagemErroGravarCliente">Erro ao gravar o cliente!</string>
+    <string name="textoTituloMensagemAtencao">Atenção</string>
+    <string name="textoMensagemInformeNome">Informe o nome do cliente!</string>
+
 </resources>

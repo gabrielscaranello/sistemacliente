@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.bartz.sistemaclientes.R
-import com.bartz.sistemaclientes.modelo.DAO.Conexao
+import com.bartz.sistemaclientes.modelo.dao.Conexao
 
 class PesquisaClientes : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pesquisa_clientes)
-        Conexao.conectarBancoDados(applicationContext);
+        Conexao.conectarBancoDados(applicationContext)
         carregarCadastroCliente()
     }
 
@@ -20,7 +20,7 @@ class PesquisaClientes : AppCompatActivity() {
         carregarCadastroCliente()
     }
 
-    fun carregarCadastroCliente() {
+    fun carregarCadastroCliente(){
         val telaCadastro = Intent(this, CadastroClientes::class.java)
         startActivity(telaCadastro)
     }

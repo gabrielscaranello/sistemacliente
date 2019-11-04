@@ -24,10 +24,10 @@
 
             <EditText
                 android:id="@+id/campoNome"
-                android:hint="@string/marcaCampoObrigatorio"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:inputType="text"/>
+                android:hint="@string/marcaCampoObrigatorio"
+                android:inputType="text" />
 
             <TextView
                 style="@style/estiloLabels"
@@ -37,10 +37,9 @@
 
             <EditText
                 android:id="@+id/campoTelefone"
-                android:hint="@string/marcaCampoObrigatorio"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:inputType="phone"/>
+                android:inputType="phone" />
 
             <TextView
                 style="@style/estiloLabels"
@@ -50,34 +49,32 @@
 
             <EditText
                 android:id="@+id/campoEmail"
-                android:hint="@string/marcaCampoObrigatorio"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textEmailAddress" />
 
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
+                android:checkedButton="@id/campoPessoaFisica"
                 android:orientation="horizontal">
 
                 <RadioButton
                     android:id="@+id/campoPessoaFisica"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/labelPessoaFisica"
-                    android:layout_marginRight="25dp">
-                </RadioButton>
+                    android:text="@string/labelPessoaFisica" />
 
                 <RadioButton
                     android:id="@+id/campoPessoaJuridica"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="@string/labelPessoaJuridica">
-                </RadioButton>
-
+                    android:layout_marginLeft="25dp"
+                    android:text="@string/labelPessoaJuridica" />
             </RadioGroup>
 
             <TextView
+                android:id="@+id/labelCpfCnpj"
                 style="@style/estiloLabels"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,48 +82,42 @@
 
             <EditText
                 android:id="@+id/campoCpfCnpj"
-                android:hint="@string/marcaCampoObrigatorio"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:inputType="number"/>
-
+                android:inputType="number" />
 
             <LinearLayout
+                android:id="@+id/camposPessoaFisica"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-            <TextView
-                style="@style/estiloLabels"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/labelDataNasc" />
-
-            <EditText
-                android:id="@+id/campoDataNasc"
-                android:hint="@string/marcaCampoObrigatorio"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:inputType="date"
-                android:focusable="false"
-                android:clickable="true"
-                android:onClick="eventoCliqueCampoData"/>
-
-
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
 
                 <TextView
                     style="@style/estiloLabels"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/labelSexo" />
+                    android:text="@string/labelDataNasc" />
+
+                <EditText
+                    android:id="@+id/campoDataNasc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:onClick="eventoCliqueCampoData" />
+
+                <TextView
+                    style="@style/estiloLabels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/labelSexo"/>
 
                 <Spinner
                     android:id="@+id/campoSexo"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"></Spinner>
-
+                    android:layout_height="50dp"/>
             </LinearLayout>
-
         </LinearLayout>
     </ScrollView>
 
@@ -139,7 +130,7 @@
         android:tint="@android:color/white"
         app:backgroundTint="@color/colorPrimary"
         app:borderWidth="0dp"
-        app:srcCompat="@drawable/ok_button"
-        android:onClick="eventoCliqueBotaoSalvar"/>
+        android:onClick="eventoCliqueBotaoSalvar"
+        app:srcCompat="@drawable/ok_button" />
 
 </RelativeLayout>
